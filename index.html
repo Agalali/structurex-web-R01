@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-[100px]" style="font-size: 125%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StructureX - Your Outsourced Engineering Partner</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px #3b82f6;
+            color: transparent;
+        }
+        .selection-blue::selection {
+            background-color: #dbeafe;
+            color: #1e3a8a;
+        }
+        .grid-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 10 0 L 0 0 0 10' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='0.5'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 selection-blue">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/10 h-20 flex items-center">
+        <div class="max-w-[1400px] w-full mx-auto px-6 md:px-12 flex items-center justify-between">
+            <a href="#" class="text-2xl font-black text-white tracking-tighter">
+                Structure<span class="text-blue-500">X</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">About</a>
+                <a href="#services" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Services</a>
+                <a href="#compliance" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Standards</a>
+                <a href="#contact" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Contact</a>
+                <a href="#contact" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-lg transition-all shadow-lg shadow-blue-900/50">Get a Quote</a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-slate-900 border-b border-white/10 shadow-xl">
+            <div class="px-6 py-4 flex flex-col gap-4">
+                <a href="#about" class="mobile-link text-sm font-medium text-slate-300 hover:text-white transition-colors">About</a>
+                <a href="#services" class="mobile-link text-sm font-medium text-slate-300 hover:text-white transition-colors">Services</a>
+                <a href="#compliance" class="mobile-link text-sm font-medium text-slate-300 hover:text-white transition-colors">Standards</a>
+                <a href="#contact" class="mobile-link text-sm font-medium text-slate-300 hover:text-white transition-colors">Contact</a>
+                <a href="#contact" class="mobile-link text-center px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold rounded-lg transition-all">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-slate-900 text-white overflow-hidden min-h-[100dvh] flex flex-col justify-center pt-20" style="background-image: url('pngtree-steel-construction-of-an-industrial-building-under-construction-picture-image_15575573.jpg'); background-size: cover; background-position: center;">
+        
+        <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-[2px]"></div>
+        <div class="absolute inset-0 grid-pattern opacity-40"></div>
+        
+        <div class="relative max-w-[1400px] w-full mx-auto px-6 md:px-12 py-12">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+                <div class="lg:w-2/3">
+                    <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/20 border border-blue-500/30 text-blue-300 text-sm font-medium mb-6 backdrop-blur-md">
+                        <span class="relative flex h-2 w-2 mr-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                        </span>
+                        UAE-Based Specialized Consultancy
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-black tracking-tighter mb-4">
+                        Structure<span class="text-blue-500 text-outline">X</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl text-slate-300 font-light mb-8 max-w-2xl leading-tight">
+                        Your <span class="text-white font-medium italic underline decoration-blue-500 decoration-4 underline-offset-8">Outsourced</span> Engineering Partner
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#services" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-all flex items-center gap-2 shadow-lg shadow-blue-900/50">
+                            View Our Services
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3 flex flex-col gap-4 bg-slate-900/40 p-6 md:p-8 rounded-2xl border border-white/10 backdrop-blur-md shadow-2xl w-full">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-blue-600 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-300 uppercase tracking-widest">Call Us</p>
+                            <p class="font-semibold text-white">+971 5441 9686</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-blue-600 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-300 uppercase tracking-widest">Email</p>
+                            <p class="font-semibold text-white">info@structurex.ae</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="min-h-[100dvh] flex flex-col justify-center bg-slate-900 pt-20 pb-12 border-t border-slate-800 text-white relative">
+        <div class="max-w-[1400px] w-full mx-auto px-6 md:px-12 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                
+                <div class="flex flex-col justify-center">
+                    <p class="text-blue-500 font-bold tracking-widest text-[10px] md:text-xs uppercase mb-3">About Us</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
+                        Your Outsourced <br>
+                        <span class="text-blue-500">Engineering</span> Partner
+                    </h2>
+                    <div class="w-12 h-1 bg-blue-600 mb-6"></div>
+                    
+                    <p class="text-xs md:text-sm text-slate-400 leading-relaxed mb-4">
+                        StructureX is a specialized structural engineering consultancy based in the UAE, offering outsourced services to architects, developers, contractors, and engineering firms across the Emirates. We provide reliable, high-quality structural engineering support that integrates seamlessly with your team.
+                    </p>
+                    <p class="text-xs md:text-sm text-slate-400 leading-relaxed mb-8">
+                        By acting as an extension of your team, we deliver expert solutions without the need for a full in-house engineering department. With deep knowledge of international standards and UAE regulations, we ensure projects are safe, efficient, constructible, and delivered on time.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-4">
+                        <div>
+                            <h4 class="text-xl md:text-2xl font-black text-blue-500 mb-1">9+</h4>
+                            <p class="text-[10px] md:text-xs text-slate-500">Core Services</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl md:text-2xl font-black text-blue-500 mb-1">5+</h4>
+                            <p class="text-[10px] md:text-xs text-slate-500">Design Codes</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xl md:text-2xl font-black text-blue-500 mb-1">Global</h4>
+                            <p class="text-[10px] md:text-xs text-slate-500">Outsource Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative w-full mt-10 lg:mt-0">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/5 aspect-[4/3] bg-slate-800">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" alt="Professional working on computer" class="w-full h-full object-cover opacity-90">
+                    </div>
+                    <div class="absolute -bottom-5 left-5 lg:-bottom-6 lg:-left-6 bg-blue-600 text-white p-4 lg:p-5 rounded-xl shadow-lg shadow-blue-900/50 flex flex-col justify-center min-w-[110px]">
+                        <span class="text-xl lg:text-2xl font-black leading-none mb-1">100%</span>
+                        <span class="text-[10px] lg:text-xs text-blue-100 font-medium">Code Compliant</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="min-h-[100dvh] flex flex-col justify-center bg-slate-950 text-white border-t border-white/5 pt-20 pb-12 relative overflow-hidden">
+        <div class="absolute inset-0 grid-pattern opacity-10"></div>
+
+        <div class="max-w-[1400px] w-full mx-auto px-6 md:px-12 relative z-10">
+            <div class="text-center mb-10">
+                <p class="text-blue-500 font-bold tracking-widest text-[10px] md:text-xs uppercase mb-3">What We Do</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Engineering Services</h2>
+                <div class="w-12 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-slate-400 max-w-2xl mx-auto text-xs md:text-sm">
+                    Comprehensive structural engineering solutions tailored to meet the demands of modern construction projects.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+                <div class="group bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2.5 bg-blue-500/20 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </div>
+                        <span class="text-3xl font-black text-slate-800 group-hover:text-blue-500/30 transition-colors duration-300">01</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">Advanced Structural Modeling</h3>
+                    <p class="text-slate-400 leading-relaxed text-xs flex-grow">3D Revit modeling and Finite Element Method analysis for complex models to ensure functional and structural reliability.</p>
+                </div>
+
+                <div class="group bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2.5 bg-blue-500/20 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M12 10h.01"></path><path d="M8 10h.01"></path></svg>
+                        </div>
+                        <span class="text-3xl font-black text-slate-800 group-hover:text-blue-500/30 transition-colors duration-300">02</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">Structural Analysis & Design</h3>
+                    <p class="text-slate-400 leading-relaxed text-xs flex-grow">Precise structural analysis and design calculations to ensure complete compliance with local codes and international standards.</p>
+                </div>
+
+                <div class="group bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2.5 bg-blue-500/20 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><line x1="10" y1="9" x2="8" y2="9"></line></svg>
+                        </div>
+                        <span class="text-3xl font-black text-slate-800 group-hover:text-blue-500/30 transition-colors duration-300">03</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">Shop Drawings & Schedules</h3>
+                    <p class="text-slate-400 leading-relaxed text-xs flex-grow">Detailed reinforcement drafting, schedules, and exact information on reinforcement drawings.</p>
+                </div>
+
+                <div class="group bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2.5 bg-blue-500/20 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <span class="text-3xl font-black text-slate-800 group-hover:text-blue-500/30 transition-colors duration-300">04</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">Steel Connection Design</h3>
+                    <p class="text-slate-400 leading-relaxed text-xs flex-grow">Steel connection design to provide safe structural detailing and efficient operational solutions.</p>
+                </div>
+
+                <div class="group bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2.5 bg-blue-500/20 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+                        </div>
+                        <span class="text-3xl font-black text-slate-800 group-hover:text-blue-500/30 transition-colors duration-300">05</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">Wind Engineering & Studies</h3>
+                    <p class="text-slate-400 leading-relaxed text-xs flex-grow">Evaluation of wind loads and structural response, including preliminary studies and interpretation of wind tunnel testing.</p>
+                </div>
+
+                <div class="group bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2.5 bg-blue-500/20 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5V19"></path><path d="M5 12H19"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </div>
+                        <span class="text-3xl font-black text-slate-800 group-hover:text-blue-500/30 transition-colors duration-300">06</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">Signage Structural Design</h3>
+                    <p class="text-slate-400 leading-relaxed text-xs flex-grow">Structural design and analysis of signage structures including support frames, foundations, and anchorage systems.</p>
+                </div>
+
+                <div class="group bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2.5 bg-blue-500/20 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M19 21V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14"></path><path d="M9 21V11h6v10"></path></svg>
+                        </div>
+                        <span class="text-3xl font-black text-slate-800 group-hover:text-blue-500/30 transition-colors duration-300">07</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">Tower Crane Foundation</h3>
+                    <p class="text-slate-400 leading-relaxed text-xs flex-grow">Structural design of tower crane foundations including load analysis and stability verification.</p>
+                </div>
+
+                <div class="group bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-2.5 bg-blue-500/20 rounded-xl text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"></path><path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"></path></svg>
+                        </div>
+                        <span class="text-3xl font-black text-slate-800 group-hover:text-blue-500/30 transition-colors duration-300">08</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">Review Structural Documents</h3>
+                    <p class="text-slate-400 leading-relaxed text-xs flex-grow">Review against standards and local codes, ensuring safe performance and document correctness.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="compliance" class="min-h-[100dvh] flex flex-col justify-center bg-slate-900 text-white relative overflow-hidden pt-20 pb-12 border-t border-slate-800">
+        <div class="absolute inset-0 grid-pattern opacity-20"></div>
+        
+        <div class="max-w-[1400px] w-full mx-auto px-6 md:px-12 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                
+                <div class="flex flex-col h-full justify-center">
+                    <p class="text-blue-500 font-bold tracking-widest text-[10px] md:text-xs uppercase mb-3">Compliance & Quality</p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Design Standards <br>& Codes</h2>
+                    <div class="w-12 h-1 bg-blue-600 rounded-full mb-6"></div>
+                    
+                    <p class="text-slate-400 text-xs md:text-sm leading-relaxed mb-6">
+                        All engineering services are performed in accordance with internationally recognized standards and UAE regulatory requirements. These standards form the basis for structural analysis, design, and verification in all our engineering projects.
+                    </p>
+                    
+                    <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=800" alt="3D Structural Design" class="w-full h-48 md:h-64 object-cover transform hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    
+                    <div class="flex gap-4 items-center bg-white/5 border border-white/10 p-4 rounded-xl hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 group">
+                        <div class="p-2 bg-blue-500/20 rounded-lg text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base text-white mb-0.5">ASCE 7</h4>
+                            <p class="text-slate-400 text-xs leading-snug">Minimum Design Loads and Associated Criteria</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-center bg-white/5 border border-white/10 p-4 rounded-xl hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 group">
+                        <div class="p-2 bg-blue-500/20 rounded-lg text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base text-white mb-0.5">ACI 318</h4>
+                            <p class="text-slate-400 text-xs leading-snug">Building Code Requirements for Structural Concrete</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-center bg-white/5 border border-white/10 p-4 rounded-xl hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 group">
+                        <div class="p-2 bg-blue-500/20 rounded-lg text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base text-white mb-0.5">AISC 360</h4>
+                            <p class="text-slate-400 text-xs leading-snug">Specification for Structural Steel Buildings</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 items-center bg-white/5 border border-white/10 p-4 rounded-xl hover:border-blue-500/50 hover:bg-white/10 transition-all duration-300 group">
+                        <div class="p-2 bg-blue-500/20 rounded-lg text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-base text-white mb-0.5">DBC & ADIBC</h4>
+                            <p class="text-slate-400 text-xs leading-snug">Dubai & Abu Dhabi International Building Codes</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 items-start bg-blue-900/40 border border-blue-500/30 p-4 rounded-xl mt-1 shadow-lg shadow-blue-900/20">
+                        <div class="text-blue-400 shrink-0 mt-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </div>
+                        <p class="text-blue-100 text-xs leading-relaxed font-medium">
+                            Our team ensures full compliance with local and international codes for every project we undertake.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="min-h-[100dvh] flex flex-col justify-center bg-slate-950 text-white border-t border-white/5 pt-20 pb-12">
+        <div class="max-w-[1400px] w-full mx-auto px-6 md:px-12">
+            
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3">Contact Us</h2>
+                <div class="w-12 h-1 bg-blue-600 mx-auto mb-4"></div>
+                <p class="text-slate-400 max-w-xl mx-auto text-xs md:text-sm">
+                    Ready to discuss your project? Reach out to us for a consultation or a detailed engineering quote.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                
+                <div class="flex flex-col justify-center">
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-center">
+                            <div class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-blue-400 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-white">Email</h4>
+                                <a href="mailto:info@structurex.ae" class="text-slate-400 text-xs md:text-sm hover:text-blue-400 transition-colors">info@structurex.ae</a>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-center">
+                            <div class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-blue-400 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.27-2.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-white">Phone</h4>
+                                <a href="tel:+97154419686" class="text-slate-400 text-xs md:text-sm hover:text-blue-400 transition-colors">+971 5441 9686</a>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-blue-400 shrink-0 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-white">Location</h4>
+                                <p class="text-slate-400 text-xs md:text-sm leading-relaxed">
+                                    Office No. BC-888890, 26th Floor<br>
+                                    Amber Gem Tower, Business District<br>
+                                    Sheikh Khalifa St, Ajman, UAE
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 items-center">
+                            <div class="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl text-blue-400 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base text-white">Trade License No.</h4>
+                                <p class="text-slate-400 text-xs md:text-sm">262395331888</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#1e293b]/50 border border-slate-800 p-6 md:p-8 rounded-2xl shadow-xl w-full">
+                    <form action="https://formsubmit.co/info@structurex.ae" method="POST" class="space-y-4">
+                        <input type="hidden" name="_subject" value="New Website Inquiry - StructureX">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-[10px] md:text-xs font-medium text-slate-300 mb-1">Full Name</label>
+                                <input type="text" name="name" required placeholder="Your full name" class="w-full bg-[#0B1120] border border-slate-800 rounded-lg px-3 py-2 text-xs md:text-sm text-white placeholder-slate-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] md:text-xs font-medium text-slate-300 mb-1">Email Address</label>
+                                <input type="email" name="email" required placeholder="your@email.com" class="w-full bg-[#0B1120] border border-slate-800 rounded-lg px-3 py-2 text-xs md:text-sm text-white placeholder-slate-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] md:text-xs font-medium text-slate-300 mb-1">Phone</label>
+                                <input type="tel" name="phone" placeholder="+971 XX XXX XXXX" class="w-full bg-[#0B1120] border border-slate-800 rounded-lg px-3 py-2 text-xs md:text-sm text-white placeholder-slate-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-[10px] md:text-xs font-medium text-slate-300 mb-1">Subject</label>
+                                <input type="text" name="subject" placeholder="Project inquiry" class="w-full bg-[#0B1120] border border-slate-800 rounded-lg px-3 py-2 text-xs md:text-sm text-white placeholder-slate-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-[10px] md:text-xs font-medium text-slate-300 mb-1">Message</label>
+                            <textarea name="message" required rows="3" placeholder="Tell us about your project requirements..." class="w-full bg-[#0B1120] border border-slate-800 rounded-lg px-3 py-2 text-xs md:text-sm text-white placeholder-slate-600 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white text-xs md:text-sm font-semibold py-2.5 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-6 border-t border-white/10">
+        <div class="max-w-[1400px] w-full mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
+            <h3 class="text-sm md:text-lg font-bold">StructureX</h3>
+            <div class="flex flex-wrap justify-center gap-6 text-[10px] md:text-xs text-slate-400">
+                <span>www.structurex.ae</span>
+                <span>+971 5441 9686</span>
+                <span>info@structurex.ae</span>
+            </div>
+            <div class="text-slate-500 text-[10px] md:text-xs">
+                &copy; <span id="year"></span> StructureX.
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle Script
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Open/Close menu when button is clicked
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
